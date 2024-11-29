@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>Weather App</h1>
+      
+
+
+
+ </header>
+    <main>
+      <!-- Search Section -->
+      <div class="search-container">
+        <input type="text" id="city-input" placeholder="Enter city name">
+        <button id="search-btn" href="./search.html">Search</button>
+      </div>
+      
+      <!-- Current Weather -->
+      <div class="weather-result" id="weather-result">
+        <h2 id="city-name">City Name</h2>
+        <p id="temperature"></p>
+        <p id="weather-description"></p>
+        <p id="humidity"></p>
+        <button id="unit-toggle">Switch to °F</button>
+      </div>
+
+      <!-- 5-Day Forecast -->
+      <div class="forecast" id="forecast">
+        <h3>5-Day Forecast</h3>
+        <div class="forecast-container" id="forecast-container">
+          <!-- Forecast cards will be inserted here -->
+        </div>
+      </div>
+      
+      <!-- Search History -->
+      <div class="history" id="history">
+        <h3>Recent Searches</h3>
+        <ul id="history-list">
+          </ul>
+
+          <!-- clear history -->
+
+          <button id="clear-history">Clear History</button>
+
+
+      </div>
+    </main>
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
